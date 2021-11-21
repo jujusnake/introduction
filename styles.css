@@ -1,0 +1,266 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+#korean {
+  font-family: "Roboto", sans-serif;
+}
+
+.full {
+  background-color: #c4c4c4;
+}
+
+.header,
+.about,
+.value,
+.photo,
+.contact,
+.footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  height: 48px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header .menu {
+  font-size: 16px;
+  line-height: 24px;
+}
+.header .menu a {
+  margin-right: 24px;
+  text-decoration: none;
+  color: #000;
+  transition: color 100ms ease-in-out, text-shadow 100ms ease-in-out;
+}
+
+.header .menu a:last-child {
+  margin: 0;
+}
+
+/* -------- about ----------- */
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 140px;
+  margin-bottom: 160px;
+}
+
+.about .profile {
+  /* width: 50%; */
+  display: flex;
+  margin-right: 120px;
+}
+
+.about .profile img {
+  width: 300px;
+  height: 400px;
+  /* margin: 0 auto; */
+  object-fit: cover;
+}
+
+.about .about-desc {
+  /* width: 50%; */
+}
+
+h1.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 36px;
+}
+
+.about .about-desc .about-sub,
+.about .about-desc .about-p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.about .about-desc .about-sub {
+  margin-bottom: 36px;
+}
+
+.about .about-desc .about-sub strong {
+  font-weight: 700;
+}
+
+.about .about-desc .about-p p {
+  margin-bottom: 28px;
+}
+
+.about .about-desc .about-p p:last-child {
+  margin: 0;
+}
+
+/* ---------- values ---------- */
+
+.value {
+  text-align: center;
+  margin-bottom: 160px;
+}
+
+.value .value-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.value .value-cards .card {
+  background-color: #c2c2c2;
+  width: 280px;
+  height: 280px;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+}
+
+.value .value-cards .card .card-content {
+  /* margin: auto; */
+  padding: 40px;
+}
+
+.value .value-cards .card .card-content strong {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.value .value-cards .card .card-content p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* ------------- photo -------------- */
+
+.photo-full {
+  background-color: #f3f3f3;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 160px;
+}
+
+.photo .photo-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.photo .photo-container,
+.photo .my-slider,
+.photo .my-slider img {
+  width: 900px;
+  height: 600px;
+}
+
+.photo .slider-left,
+.photo .slider-right {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+.photo .slider-left img {
+  transform: scale(130%);
+}
+
+.photo .slider-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.photo .photo-container .slider-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.photo .slider-right img {
+  transform: rotate(180deg) scale(130%);
+}
+
+/* -------- contact --------- */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h2 {
+  margin-bottom: 18px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 160px;
+}
+
+.contact-button {
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 16px;
+  transition: opacity 100ms ease-in-out;
+}
+
+.contact-button:hover {
+  opacity: 0.5;
+}
+
+.contact-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-button img:active {
+  box-shadow: inset 0px 0px 24px rgba(0, 0, 0, 1);
+}
+
+.mail-img {
+  transform: scale(90%);
+}
+
+/* -------- footer -------- */
+.footer {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+  transition: color 100ms ease-in-out, text-shadow 100ms ease-in-out;
+}
+
+.header .menu a:hover,
+.footer a:hover {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
