@@ -280,6 +280,7 @@ h1.title {
   .photo,
   .contact,
   .footer {
+    max-width: none;
     padding: 0 20px;
   }
 
@@ -347,6 +348,7 @@ h1.title {
   .value .value-cards .card {
     background-color: #c2c2c2;
     width: 100%;
+    max-width: 400px;
     height: auto;
     margin-bottom: 20px;
   }
