@@ -198,7 +198,7 @@ h1.title {
 }
 
 .photo .slider-right img {
-  transform: rotate(180deg) scale(130%);
+  transform: scale(130%);
 }
 
 /* -------- contact --------- */
@@ -402,7 +402,7 @@ h1.title {
   }
 
   .photo .slider-right img {
-    transform: scale(100%) rotate(180deg);
+    transform: scale(100%);
   }
 
   /* -------- footer -------- */
