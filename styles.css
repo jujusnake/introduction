@@ -12,6 +12,11 @@ body {
 
 .full {
   background-color: #c4c4c4;
+  transition: 100ms ease-in-out;
+}
+
+.full:hover {
+  background-color: #a3baa3;
 }
 
 .header,
@@ -123,12 +128,18 @@ h1.title {
 }
 
 .value .value-cards .card {
-  background-color: #c2c2c2;
+  background-color: #c4c4c4;
   width: 280px;
   height: 280px;
   border-radius: 9px;
   display: flex;
   flex-direction: column;
+  transition: 200ms ease-in-out;
+}
+
+.value .value-cards .card:hover {
+  background-color: #a3baa3;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
 }
 
 .value .value-cards .card .card-content {
@@ -172,12 +183,18 @@ h1.title {
 
 .photo .slider-left,
 .photo .slider-right {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 48px;
+  transition: 100ms ease-in-out;
+}
+
+.photo .slider-left:hover,
+.photo .slider-right:hover {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .photo .slider-left img {
@@ -264,7 +281,7 @@ h1.title {
 .header .menu a:hover,
 .footer a:hover {
   color: #fff;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .sm {
@@ -348,7 +365,7 @@ h1.title {
   }
 
   .value .value-cards .card {
-    background-color: #c2c2c2;
+    background-color: #c4c4c4;
     width: 100%;
     max-width: 400px;
     height: auto;
