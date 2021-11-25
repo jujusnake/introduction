@@ -136,6 +136,7 @@ h1.title {
 .bio button {
   font-size: 20px;
   font-weight: 700;
+  transition: all 300ms ease-in-out;
 }
 
 .bio button:hover {
@@ -144,7 +145,7 @@ h1.title {
 
 #study-content,
 #work-content {
-  display: none;
+  visibility: hidden;
   font-size: 16px;
   line-height: 1.5em;
 }
@@ -156,7 +157,7 @@ h1.title {
 }
 
 .show {
-  display: block !important;
+  visibility: visible !important;
 }
 
 /* ---------- values ---------- */
