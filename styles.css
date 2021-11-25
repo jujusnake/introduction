@@ -25,6 +25,7 @@ body {
 
 .header,
 .about,
+.bio,
 .value,
 .photo,
 .contact,
@@ -117,6 +118,45 @@ h1.title {
 
 .about .about-desc .about-p p:last-child {
   margin: 0;
+}
+
+/* -------- bio ----------- */
+
+.bio {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 160px;
+}
+
+.bio .study,
+.bio .work {
+  min-width: 240px;
+}
+
+.bio button {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bio button:hover {
+  color: #636363;
+}
+
+#study-content,
+#work-content {
+  display: none;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.active-button {
+  text-decoration: underline;
+  margin-bottom: 28px;
+  /* color: #c4c4c4; */
+}
+
+.show {
+  display: block !important;
 }
 
 /* ---------- values ---------- */
@@ -353,6 +393,18 @@ h1.title {
 
   .about .about-desc .about-p p {
     margin-bottom: 12px;
+  }
+
+  /* --------------- bio ------------- */
+  .bio {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .bio .study,
+  .bio .work {
+    margin-bottom: 40px;
   }
 
   /* ---------- values ---------- */

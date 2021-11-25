@@ -91,6 +91,37 @@
       </div>
     </section>
 
+    <section class="bio">
+      <article class="study">
+        <button
+          id="study-btn"
+          type="button"
+          onClick="showContent(`study-content`, `study-btn`)"
+        >
+          Academic Background
+        </button>
+        <div id="study-content">
+          2013.03 - 2020.02 <br />
+          서강대학교, 영미어문 / 심리학 <br />
+          3.92/4.5, Magna Cum Laude
+        </div>
+      </article>
+      <article class="work">
+        <button
+          id="work-btn"
+          type="button"
+          onClick="showContent(`work-content`, `work-btn`)"
+        >
+          Working Experience
+        </button>
+        <div id="work-content">
+          2020.08 - 2021.08 <br />
+          엘림넷 / 사원 <br />
+          마케팅, 서비스 기획
+        </div>
+      </article>
+    </section>
+
     <section class="value" id="value">
       <h1 class="value-main title">Values</h1>
       <div class="value-cards">
@@ -224,5 +255,14 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./slider.js"></script>
+    <script>
+      function showContent(content, button) {
+        let element = document.getElementById(content);
+        element.classList.toggle("show");
+
+        let element2 = document.getElementById(button);
+        element2.classList.toggle("active-button");
+      }
+    </script>
   </body>
 </html>
