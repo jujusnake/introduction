@@ -126,7 +126,7 @@ h1.title {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 160px;
-  transition: visibility 0.3s ease-in-out;
+  /* transition: visibility 0.3s ease-in-out; */
 }
 
 .bio .study,
@@ -348,6 +348,35 @@ h1.title {
 /* /////// Responsive Mobile!! //////// */
 
 @media screen and (max-width: 960px) {
+  /* cancel all hover */
+
+  .full {
+    background-color: #a3baa3;
+  }
+
+  .full:hover {
+    all: none;
+  }
+
+  .bio button:hover {
+    color: #000;
+  }
+
+  .bio button:active {
+    color: #000000;
+  }
+
+  .value .value-cards .card {
+    background-color: #d5dfd5;
+  }
+
+  .value .value-cards .card:hover {
+    box-shadow: none;
+    /* background-color: ; */
+  }
+
+  /* done cancel hover effects */
+
   .header,
   .about,
   .bio,
